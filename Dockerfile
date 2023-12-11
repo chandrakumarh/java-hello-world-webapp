@@ -5,10 +5,10 @@ FROM openjdk:11
 WORKDIR /usr/src/app
 
 # Copy the Java application JAR file into the container
-COPY ./target/myapp.jar .
+COPY ./target/app.jar .
 
 # Expose the port the application runs on
 EXPOSE 8000
 
 # Define the command to run the application when the container starts
-CMD ["java", "-jar", "myapp.jar"]
+CMD ["java", "-jar", "app.jar"]
